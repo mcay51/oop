@@ -1,11 +1,31 @@
 package tr.com.mcay.deepandshallowcopy;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Student implements Cloneable {
     private String name;
     private String surname;
     private int age;
+    private Hobies hobbies;
+
+    public Hobies getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(Hobies hobbies) {
+        this.hobbies = hobbies;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", hobbies=" + hobbies.getHabiName() +
+                '}';
+    }
 
     public Student(String name, String surname, int age) {
         this.name = name;
@@ -37,15 +57,6 @@ public class Student implements Cloneable {
     }
 
     @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-    @Override
     public Student clone() {
         try {
             Student clone = (Student) super.clone();
@@ -55,4 +66,5 @@ public class Student implements Cloneable {
             throw new AssertionError();
         }
     }
+
 }

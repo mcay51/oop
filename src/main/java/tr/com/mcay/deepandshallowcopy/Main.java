@@ -1,12 +1,25 @@
 package tr.com.mcay.deepandshallowcopy;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
         Student student2;
         Student student1=new Student("Mustafa","Cay",45);
+
+        Hobies hobi=new Hobies();
+        hobi.setHabiName("Kitap Okumak");
+
         //sınıflarda bu şekilde eşitleme yapıldığında shallow copy yapılmış olur
         student2=student1;
+
+
+        student1.setHobbies(hobi);
+        Student student3=student2.clone();
+        hobi.setHabiName("Sinemaya gitmek");
+        student3.setHobbies(hobi);
         System.out.println("Student 1: "+student1.toString());
         System.out.println("Student 2: "+student2.toString());
         student1.setName("Mehmet Ali");
@@ -17,7 +30,7 @@ public class Main {
 
 
 // Sınıflarda Clonable implementasyonu ile deepcopy olayı gerçekleştirilebilir
-        Student student3 = student1.clone();
+
         System.out.println("Student 3: "+student3.toString());
 
         System.out.println("Student 1: "+student1.toString());
@@ -45,6 +58,16 @@ System.out.println("Student 3 Hash Code "+student3.hashCode());
         System.out.println(s1); // str2
         System.out.println(s2); // str2_
 // s1 isn’t affected by s2
+
+        List aList =new ArrayList();
+        aList.add("Ahmet");
+        aList.add("Mehmet Ali");
+        aList.add("Mustafa");
+        List bList=aList;
+        aList.add("Ayşe");
+        bList.add("Havva");
+        System.out.println("A Listesi : "+aList); // [Ahmet, Mehmet Ali, Mustafa, Ayşe, Havva]
+        System.out.println("B Listesi : "+bList);
 
     }
 }
