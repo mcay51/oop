@@ -1,6 +1,4 @@
-package tr.com.mcay;
-
-import tr.com.mcay.oop.Student;
+package tr.com.mcay.oop;
 
 import java.util.ArrayList;
 import java.util.List;
