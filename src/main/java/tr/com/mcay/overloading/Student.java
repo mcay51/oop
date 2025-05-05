@@ -21,19 +21,19 @@ public class Student {
 
     public void setGrades(int midtermGrade, int finalGrade)
     {
-        this.midtermGrade = midtermGrade;
-        this.finalGrade = finalGrade;
+        //this.midtermGrade = midtermGrade;
+        //this.finalGrade = finalGrade;
     }
     public float calculateMeanGrade()
     {
-        return midtermGrade * 0.4f + finalGrade * 0.6f;
+        return 0;//midtermGrade * 0.4f + finalGrade * 0.6f;
 // default mean grade calculation method
     }
     public float calculateMeanGrade(float finalRatio)
     {
-        return midtermGrade * (1 - finalRatio) + finalGrade * finalRatio;
+        return 0;//midtermGrade * (1 - finalRatio) + finalGrade * finalRatio;
 // mean grade calculation method with modification to final ratio
 // overloading
     }
 }
-}
+

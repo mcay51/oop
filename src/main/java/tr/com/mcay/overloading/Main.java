@@ -2,7 +2,7 @@ package tr.com.mcay.overloading;
 
 public class Main {
     public static void main(String[] args) {
-        String s = "a test string";
+   /*     String s = "a test string";
         System.out.println(s.indexOf("test"));
         System.out.println(s.indexOf('a'));
         System.out.println(s.indexOf('t', 3, 9));
@@ -18,7 +18,7 @@ public class Main {
         student2.calculateMeanGrade();
         student1.calculateMeanGrade(0.7f);
         student2.calculateMeanGrade(0.7f);
-
+*/
 
 // same method was called with different arguments in objects
 // overloading
