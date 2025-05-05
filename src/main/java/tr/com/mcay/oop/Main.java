@@ -32,6 +32,8 @@ public class Main {
             }
 
         }
+
+
         System.out.println("\n");
         List list = new ArrayList();
         list.add(student);
@@ -42,6 +44,8 @@ public class Main {
         for(int i=0;i<list.size();i++){
             System.out.println(list.get(i));
         }
+
+
         List<Integer> notList=new ArrayList();
         notList.add(80);
         notList.add(45);
@@ -50,7 +54,8 @@ public class Main {
         System.out.println( "Öğrenci Notu: "+ogrenciNotu);
         student.notHesapla2(notList);
 
-        System.out.println("Integer Donenstudent.notHesapla(notList));
+        System.out.println("Integer Metod : "+ student.notHesapla(notList));
+       // System.out.println("Void Metod : "+ student.notHesapla2(notList)); Burası hata verir çünkü void metodu void döndürür.
     }
 
 
