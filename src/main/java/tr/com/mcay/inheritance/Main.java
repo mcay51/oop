@@ -9,5 +9,6 @@ public class Main {
         kedi2.kediSesi("Miyav");
         kedi2.hayvanSesi("Miyav Miyav");
         kopek.hayvanSesi("Hav Hav");
+        kedi.hareketEt("Kedi ");
     }
 }

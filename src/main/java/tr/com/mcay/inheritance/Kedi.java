@@ -14,13 +14,17 @@ public class Kedi extends Hayvan{
 
     }
 
+
     @Override
     public void hayvanSesi(String ses){
         System.out.println(super.getAge()+" "+super.getName()+" "+super.getCins());
         System.out.println("Kedi Yemeği "+super.getYemek());
         System.out.println("Kedi Sesi Çıkart : "+ses);
     }
-
+    @Override
+    public void hareketEt(String tur){
+        super.hareketEt(tur);
+    }
     public String getYemek() {
         return yemek;
     }

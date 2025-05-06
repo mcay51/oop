@@ -1,5 +1,7 @@
 package tr.com.mcay.oop;
 
+import tr.com.mcay.inheritance.Hayvan;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +58,10 @@ public class Main {
 
         System.out.println("Integer Metod : "+ student.notHesapla(notList));
        // System.out.println("Void Metod : "+ student.notHesapla2(notList)); Burası hata verir çünkü void metodu void döndürür.
+
+        Hayvan hayvan = new Kus();
+       // hayvan.hareketEt("Kuş"); --> Burası hata verir çünkü protected aynı paket içinden yada kalıtım yolu ile alt sınıflar dan erişilebilir
+
     }
 
 

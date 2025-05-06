@@ -14,6 +14,9 @@ public class Hayvan {
     public void hayvanSesi(String ses){
             System.out.println("Hayvan Sesini Yazdır : "+ ses);
     }
+    protected void hareketEt(String hayvanTur){
+        System.out.println(hayvanTur +" Hareket Ediyor.");
+    }
     public String getName() {
         return name;
     }
