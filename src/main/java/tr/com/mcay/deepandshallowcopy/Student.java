@@ -9,6 +9,10 @@ public class Student implements Cloneable {
     private int age;
     private Hobies hobbies;
 
+    public Student() {
+
+    }
+
     public Hobies getHobbies() {
         return hobbies;
     }

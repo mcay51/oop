@@ -16,5 +16,7 @@ System.out.println("Access Modifier hem Soyutlama (Abstraction) hemde Encapsulat
         System.out.println( "Öğrencinin notu: "+grade);
 
 
+
+
     }
 }
